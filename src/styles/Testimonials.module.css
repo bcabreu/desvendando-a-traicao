@@ -1,0 +1,32 @@
+.testimonies {
+  padding: 1.4rem;
+}
+
+.testimonies h2 {
+  color: var(--text-black);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 0.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonies h4 {
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.testimonies p {
+  font-size: 1rem;
+}
+
+@media (min-width: 821px) {
+  .testimonies h2 {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+}

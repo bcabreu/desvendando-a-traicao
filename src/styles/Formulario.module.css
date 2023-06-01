@@ -1,0 +1,65 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.form h3 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form h3 span {
+  color: var(--text-red);
+}
+
+.form input[type="email"] {
+  width: 80vw;
+  padding: 0.7rem;
+  margin: 2rem 0;
+  background-color: var(--background);
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.form input[type="submit"] {
+  width: 70vw;
+  background-color: var(--background-black);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  color: var(--text-light);
+  cursor: pointer;
+  border: none;
+}
+
+.statusMessageSuccess {
+  color: var(--text-green);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.statusMessageError {
+  color: var(--text-red);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form h3 {
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+  .form input[type="email"] {
+    width: 30vw;
+    padding: 0.5rem;
+  }
+  .form input[type="submit"] {
+    width: 20vw;
+  }
+}
