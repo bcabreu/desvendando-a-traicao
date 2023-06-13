@@ -1,0 +1,44 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about_author {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border-radius: 50%;
+  margin-top: 1rem ;
+}
+
+.about_author h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.about_author p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+@media (min-width: 768px) {
+  .about_author {
+    padding: 2.6rem;
+  }
+  .about_author p {
+    font-size: 1.5rem;
+  }
+}

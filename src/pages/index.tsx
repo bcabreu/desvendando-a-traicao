@@ -7,7 +7,7 @@ import styles from "@/styles/Home.module.css";
 import { Formulario } from "@/components/Formulario";
 import { Testimonials } from "@/components/Testimonials";
 import { Button } from "@/components/Button";
-
+import { AboutAuthor } from "@/components/AboutAuthor";
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
@@ -157,7 +157,7 @@ export default function Home() {
             enfrentar os <span>desafios da infidelidade</span> e iniciar a
             jornada de cura. Não permita que a incerteza domine sua vida -
             obtenha clareza, respostas e uma rota de ação com{" "}
-            <span>Desvendando a Traição</span> .
+            <span>Desvendando a Traição</span>.
           </p>
           <br />
           <br />
@@ -177,7 +177,8 @@ export default function Home() {
             práticos e empáticos para lidar com a confiança quebrada, bem como
             estratégias para prevenir a<span> infidelidade</span> e fortalecer o
             relacionamento. Enfatizando a importância do autoconhecimento e da
-            comunicação eficaz, este guia essencial é destinado a quem deseja
+            comunicação eficaz, este guia;
+essencial é destinado a quem deseja
             restaurar a confiança e a paz em seu relacionamento.
           </p>
         </div>
@@ -185,7 +186,8 @@ export default function Home() {
           <Formulario />
         </div>
         <div className={styles.guarantee}>
-          <h2 className={roboto.className}>Garantia de Satisfação Total</h2>
+          <Image src="/images/garantia.png" width={100} height={100} alt="Certificado de garantia"/>
+          {/* <h2 className={roboto.className}>Garantia de Satisfação Total</h2> */}
           <p className={roboto.className}>
             Nós acreditamos tanto na qualidade e eficácia do nosso guia
             Desvendando a Traição que oferecemos uma
@@ -194,6 +196,10 @@ export default function Home() {
             basta nos enviar um email solicitando o reembolso, sem perguntas e
             sem complicações.
           </p>
+        </div>
+
+        <div>
+        <AboutAuthor />
         </div>
 
         <div className={styles.call_for_action}>

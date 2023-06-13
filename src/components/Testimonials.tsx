@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -84,12 +84,12 @@ export function Testimonials() {
         >
           {testimonialsData.map((item, index) => (
             <SwiperSlide key={index}>
-              <Image
+             {/* <Image
                 src={item.image}
                 alt={item.person}
                 width={500}
                 height={300}
-              />
+              /> */}
               <h4 className={roboto.className}>{item.person}</h4>
               <p className={roboto.className}>{item.text}</p>
             </SwiperSlide>
