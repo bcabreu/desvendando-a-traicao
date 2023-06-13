@@ -27,7 +27,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="traicao, infidelidade, relacionamento, sinais de traicao, como superar traicao, ebook, guia"
+          content="traicao, infidelidade, relacionamento, sinais de traição, como superar traição, ebook, guia"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Alex Manson" />
@@ -42,11 +42,11 @@ export default function Home() {
         <meta property="og:image" content="/images/mockup-ebook.jpg" />
         <meta
           property="og:url"
-          content="desvendandoatraicao.dralexmenson.com"
+          content="desvendandoatraicao.dralexmanson.com"
         />
         <link
           rel="canonical"
-          href="https://desvendandoatraicao.dralexmenson.com"
+          href="https://desvendandoatraicao.dralexmanson.com"
         />
 
         <meta property="og:type" content="website" />

@@ -11,7 +11,7 @@ const roboto = Roboto({
 export function Button() {
   return (
     <>
-      <Link href="/teste">
+      <Link href="https://pay.kiwify.com.br/moHMIDE">
         <button type="submit" className={styles.button}>
           <h4 className={`${roboto.className} ${styles.paragraph}`}>
             Revele a verdade hoje!
