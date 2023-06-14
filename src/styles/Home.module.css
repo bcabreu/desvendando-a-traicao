@@ -204,10 +204,10 @@
   align-items: center;
 }
 
-.guarantee h2 {
+.guarantee p {
   font-size: 1.6rem;
   padding-bottom: 1rem;
-  font-weight: bold;
+  margin-top: 1rem;
 }
 
 .guarantee span {
@@ -219,9 +219,9 @@
     font-size: 1.8rem;
     padding: 2rem;
   }
-  .guarantee h2 {
-    font-size: 2rem;
-    padding-bottom: 2rem;
+  .guarantee p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 }
 

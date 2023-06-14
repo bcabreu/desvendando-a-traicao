@@ -187,8 +187,8 @@ export default function Home() {
         <div className={styles.guarantee}>
           <Image
             src="/images/garantia.png"
-            width={80}
-            height={80}
+            width={120}
+            height={120}
             alt="Certificado de garantia"
           />
           {/* <h2 >Garantia de Satisfação Total</h2> */}
