@@ -8,7 +8,7 @@ import styles from "@/styles/AboutAuthor.module.css";
 //   subsets: ["latin"],
 // });
 
-export function AboutAuthor() {
+export default function AboutAuthor() {
   return (
     <>
       <div className={styles.about_author}>

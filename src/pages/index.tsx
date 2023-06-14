@@ -4,10 +4,10 @@ import Image from "next/image";
 // import { Roboto } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import { Formulario } from "@/components/Formulario";
-import { Testimonials } from "@/components/Testimonials";
-import { Button } from "@/components/Button";
-import { AboutAuthor } from "@/components/AboutAuthor";
+import Formulario from "@/components/Formulario";
+import Testimonials from "@/components/Testimonials";
+import Button from "@/components/Button";
+import AboutAuthor from "@/components/AboutAuthor";
 // const roboto = Roboto({
 //   weight: "400",
 //   subsets: ["latin"],

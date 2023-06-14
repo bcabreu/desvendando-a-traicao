@@ -8,7 +8,7 @@ import styles from "@/styles/Formulario.module.css";
 //   subsets: ["latin"],
 // });
 
-export function Formulario() {
+export default function Formulario() {
   const [email, setEmail] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
 

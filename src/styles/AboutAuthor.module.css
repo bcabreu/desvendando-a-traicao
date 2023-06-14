@@ -1,15 +1,3 @@
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .about_author {
   padding: 1rem;
   display: flex;
@@ -20,7 +8,7 @@
 
 .image {
   border-radius: 50%;
-  margin-top: 1rem ;
+  margin-top: 1rem;
 }
 
 .about_author h2 {

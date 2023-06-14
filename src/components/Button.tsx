@@ -8,7 +8,7 @@ import Link from "next/link";
 //   subsets: ["latin"],
 // });
 
-export function Button() {
+export default function Button() {
   return (
     <>
       <Link href="https://pay.kiwify.com.br/moHMIDE">

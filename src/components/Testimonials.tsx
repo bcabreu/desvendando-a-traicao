@@ -51,7 +51,7 @@ const testimonialsData = [
   },
 ];
 
-export function Testimonials() {
+export default function Testimonials() {
   return (
     <>
       <div className={styles.testimonies}>
