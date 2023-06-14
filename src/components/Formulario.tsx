@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "@/styles/Formulario.module.css";
 
-import { Roboto } from "@next/font/google";
+// import { Roboto } from "next/font/google";
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export function Formulario() {
   const [email, setEmail] = useState("");
@@ -43,13 +43,12 @@ export function Formulario() {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h3 className={roboto.className}>
+      <h3>
         Se inscreva e ganhe o <span>primeiro capítulo</span> do ebook
         gratuitamente.
       </h3>
       <label>
         <input
-          className={roboto.className}
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -57,13 +56,13 @@ export function Formulario() {
           placeholder="Digite seu e-mail"
         />
       </label>
-      <input className={roboto.className} type="submit" value="Inscrever" />
+      <input type="submit" value="Inscrever" />
       {statusMessage && (
         <p
           className={
             statusMessage === "Inscrição bem sucedida!"
-              ? `${roboto.className} ${styles.statusMessageSuccess}`
-              : `${roboto.className} ${styles.statusMessageError}`
+              ? ` ${styles.statusMessageSuccess}`
+              : ` ${styles.statusMessageError}`
           }
         >
           {statusMessage}

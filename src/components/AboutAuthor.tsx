@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "@/styles/AboutAuthor.module.css";
 
-import { Roboto } from "@next/font/google";
+// import { Roboto } from "next/font/google";
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export function AboutAuthor() {
   return (
@@ -19,8 +19,8 @@ export function AboutAuthor() {
           height={100}
           alt="Dr. Alex Manson"
         />
-        <h2 className={roboto.className}>Sobre o autor</h2>
-        <p className={roboto.className}>
+        <h2>Sobre o autor</h2>
+        <p>
           Alex Manson é um renomado especialista em relacionamentos, com foco em
           estudos comportamentais para analisar a infidelidade em casais. Ele
           obteve seu doutorado em Psicologia, com ênfase em Comportamento Humano
@@ -31,7 +31,7 @@ export function AboutAuthor() {
           de estudos inovadores que comprovam os métodos e abordagens
           apresentados em seu ebook.
         </p>
-        <p className={roboto.className}>
+        <p>
           Com um profundo conhecimento em psicologia, comportamento humano e
           relacionamentos, Alex Manson é considerado uma autoridade no estudo da
           infidelidade e seus efeitos nos casais. Seu ebook baseia-se em anos de

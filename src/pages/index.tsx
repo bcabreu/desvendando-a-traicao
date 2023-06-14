@@ -1,17 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
-import { Roboto } from "@next/font/google";
+// import { Roboto } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
 import { Formulario } from "@/components/Formulario";
 import { Testimonials } from "@/components/Testimonials";
 import { Button } from "@/components/Button";
 import { AboutAuthor } from "@/components/AboutAuthor";
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 export default function Home() {
   return (
@@ -79,14 +79,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
-          <h1 className={roboto.className}>
+          <h1>
             Não Fique Mais no Escuro: Descubra os Sinais de
             <span> Infidelidade</span> e Restaure a Paz no seu Relacionamento
             com o Guia "Desvendando a Traição"!
           </h1>
         </div>
         <div className={styles.introduction}>
-          <p className={roboto.className}>
+          <p>
             Já perdeu o sono, atormentado pela incerteza em seu relacionamento?
             Pequenas mudanças de comportamento do seu parceiro despertam dúvidas
             e medos em você? A suspeita de infidelidade tem corroído a alegria
@@ -97,7 +97,7 @@ export default function Home() {
           <Button />
         </div>
         <div className={styles.problem_demonstration}>
-          <p className={roboto.className}>
+          <p>
             A <span>infidelidade</span> é um problema doloroso e, infelizmente,
             comum. Muitas vezes, os sinais estão lá, mas não conseguimos
             reconhecê-los. Viver com a suspeita constante pode arruinar a
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
         <div className={styles.product_presentation}>
           <div className={styles.text}>
-            <p className={roboto.className}>
+            <p>
               Com <span>"Desvendando a Traição"</span>, nós fornecemos a você
               ferramentas e insights para detectar os sinais sutis de
               infidelidade, capacitando você a enfrentar a verdade e tomar as
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.product_details}>
-          <p className={roboto.className}>
+          <p>
             O <span>Desvendando a Traição</span> é mais do que apenas um e-book,
             é um guia de vida real para a{" "}
             <span>restauração da confiança e da paz no seu relacionamento</span>
@@ -167,8 +167,8 @@ export default function Home() {
           <Testimonials />
         </div>
         <div className={styles.more_product_details}>
-          <h2 className={roboto.className}></h2>
-          <p className={roboto.className}>
+          <h2></h2>
+          <p>
             "Desvendando a Traição" oferece uma exploração profunda e sensível
             da <span>infidelidade</span>, examinando seu impacto nos
             relacionamentos e oferecendo orientação sobre como
@@ -191,8 +191,8 @@ export default function Home() {
             height={80}
             alt="Certificado de garantia"
           />
-          {/* <h2 className={roboto.className}>Garantia de Satisfação Total</h2> */}
-          <p className={roboto.className}>
+          {/* <h2 >Garantia de Satisfação Total</h2> */}
+          <p>
             Nós acreditamos tanto na qualidade e eficácia do nosso guia
             Desvendando a Traição que oferecemos uma
             <span> garantia de devolução do dinheiro em até 7 dias</span>. Se
@@ -207,7 +207,7 @@ export default function Home() {
         </div>
 
         <div className={styles.call_for_action}>
-          <h2 className={roboto.className}>
+          <h2>
             Não deixe a incerteza dominar a sua vida.{" "}
             <span>
               Clique no botão abaixo para comprar Desvendando a Traição

@@ -6,12 +6,12 @@ import "swiper/swiper.min.css";
 SwiperCore.use([Autoplay, Navigation, Pagination]);
 import styles from "@/styles/Testimonials.module.css";
 
-import { Roboto } from "@next/font/google";
+// import { Roboto } from "next/font/google";
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+// const roboto = Roboto({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 const testimonialsData = [
   {
@@ -55,9 +55,7 @@ export function Testimonials() {
   return (
     <>
       <div className={styles.testimonies}>
-        <h2 className={roboto.className}>
-          O Poder da Mudança: Depoimentos Inspiradores de Nossos Leitores
-        </h2>
+        <h2>O Poder da Mudança: Depoimentos Inspiradores de Nossos Leitores</h2>
 
         <Swiper
           spaceBetween={50}
@@ -84,14 +82,14 @@ export function Testimonials() {
         >
           {testimonialsData.map((item, index) => (
             <SwiperSlide key={index}>
-             {/* <Image
+              {/* <Image
                 src={item.image}
                 alt={item.person}
                 width={500}
                 height={300}
               /> */}
-              <h4 className={roboto.className}>{item.person}</h4>
-              <p className={roboto.className}>{item.text}</p>
+              <h4>{item.person}</h4>
+              <p>{item.text}</p>
             </SwiperSlide>
           ))}
         </Swiper>
