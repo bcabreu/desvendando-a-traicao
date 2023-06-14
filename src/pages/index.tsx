@@ -177,8 +177,7 @@ export default function Home() {
             práticos e empáticos para lidar com a confiança quebrada, bem como
             estratégias para prevenir a<span> infidelidade</span> e fortalecer o
             relacionamento. Enfatizando a importância do autoconhecimento e da
-            comunicação eficaz, este guia;
-essencial é destinado a quem deseja
+            comunicação eficaz, este guia; essencial é destinado a quem deseja
             restaurar a confiança e a paz em seu relacionamento.
           </p>
         </div>
@@ -186,7 +185,12 @@ essencial é destinado a quem deseja
           <Formulario />
         </div>
         <div className={styles.guarantee}>
-          <Image src="/images/garantia.png" width={100} height={100} alt="Certificado de garantia"/>
+          <Image
+            src="/images/garantia.png"
+            width={80}
+            height={80}
+            alt="Certificado de garantia"
+          />
           {/* <h2 className={roboto.className}>Garantia de Satisfação Total</h2> */}
           <p className={roboto.className}>
             Nós acreditamos tanto na qualidade e eficácia do nosso guia
@@ -199,7 +203,7 @@ essencial é destinado a quem deseja
         </div>
 
         <div>
-        <AboutAuthor />
+          <AboutAuthor />
         </div>
 
         <div className={styles.call_for_action}>
