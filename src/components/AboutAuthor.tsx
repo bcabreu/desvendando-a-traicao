@@ -19,7 +19,7 @@ export default function AboutAuthor() {
           height={100}
           alt="Dr. Alex Manson"
         />
-        <h2>Sobre o autor</h2>
+        <h2>Quem é Alex Manson</h2>
         <p>
           Alex Manson é um renomado especialista em relacionamentos, com foco em
           estudos comportamentais para analisar a infidelidade em casais. Ele

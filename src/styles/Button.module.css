@@ -18,6 +18,7 @@
   width: 80vw;
   border: none;
   cursor: pointer;
+  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
   animation: pulse 2s infinite;
 }
 
