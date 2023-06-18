@@ -8,6 +8,9 @@ import Formulario from "@/components/Formulario";
 import Testimonials from "@/components/Testimonials";
 import Button from "@/components/Button";
 import AboutAuthor from "@/components/AboutAuthor";
+import CompraSegura from "@/components/Price";
+import Price from "@/components/Price";
+import AskAndAnswer from "@/components/AskAndAnswer";
 // const roboto = Roboto({
 //   weight: "400",
 //   subsets: ["latin"],
@@ -94,7 +97,7 @@ export default function Home() {
             para dissipar as sombras da desconfiança, permitindo-lhe retomar o
             controle e restaurar a paz em seu relacionamento.
           </p>
-          <Button />
+          <Button showContainer={false} />
         </div>
         <div className={styles.problem_demonstration}>
           <p>
@@ -126,7 +129,7 @@ export default function Home() {
               infidelidade, capacitando você a enfrentar a verdade e tomar as
               ações necessárias.
             </p>
-            <Button />
+            <Button showContainer={false} />
           </div>
           <div className={styles.imageContainer}>
             <Image
@@ -161,7 +164,7 @@ export default function Home() {
           </p>
           <br />
           <br />
-          <Button />
+          <Button showContainer={true} />
         </div>
         <div>
           <Testimonials />
@@ -214,7 +217,39 @@ export default function Home() {
             </span>{" "}
             e comece a restaurar a confiança em seu relacionamento hoje mesmo!
           </h2>
-          <Button />
+          <Price />
+        </div>
+
+        <div className={styles.ask_and_answer}>
+          <AskAndAnswer />
+        </div>
+        <div className={styles.footer}>
+          <h3>Ebook educacional de como desvendar os sinais de traição.</h3>
+          <p>
+            Compreendemos que cada leitor é responsável pela aplicação do
+            conteúdo educacional do nosso e-book. Nosso objetivo é fornecer
+            informações valiosas e orientação relevante para auxiliar o leitor
+            em determinado assunto. É importante ressaltar que a aplicação
+            prática das informações e métodos apresentados é de responsabilidade
+            exclusiva do leitor. Recomendamos sempre buscar aconselhamento
+            profissional adicional, se necessário, para adaptar as estratégias
+            às circunstâncias individuais. Estamos comprometidos em oferecer
+            recursos educacionais de qualidade, mas a aplicação e os resultados
+            dependem do esforço e discernimento do leitor.
+          </p>
+        </div>
+        <div className={styles.copyright}>
+          <p>
+            A venda do Original Guia Desvendando a Traição só pode ser realizada
+            através deste site, qualquer outro site onde você encontre este
+            produto é uma FALSIFICAÇÃO e vai contra as leis. Evite falsificação
+            e recuse conteúdos ilegais ou pirateados. Não nos responsabilizamos
+            por compras realizadas em outros sites.
+          </p>
+          <h5>
+            Copyright © 2023. Original Guia Desvendando a Traição. Todos os
+            direitos reservados.
+          </h5>
         </div>
       </main>
     </>

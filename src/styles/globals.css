@@ -1,12 +1,17 @@
 :root {
   --background: #fdfdfd;
   --background-black: #000000;
+  --background-black-light: #20262e;
   --background-red: #cc0505;
   --background-grey: #d3d3d3;
+  --background-blue: #537fe7;
+  --background-green: #039f78;
   --text-light: #fdfdfd;
   --text-red: #ff4700;
+  --text-red-light: #ff6363;
   --text-black: #000000;
   --text-green: #039f78;
+  --text-blue: #537fe7;
 }
 
 @font-face {

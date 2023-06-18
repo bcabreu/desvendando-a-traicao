@@ -18,8 +18,8 @@
   width: 80vw;
   border: none;
   cursor: pointer;
-  -webkit-animation: pulse 2s infinite; /* Chrome, Safari, Opera */
-  animation: pulse 2s infinite;
+  -webkit-animation: pulse 1s infinite; /* Chrome, Safari, Opera */
+  animation: pulse 1s infinite;
 }
 
 .paragraph {
@@ -27,9 +27,38 @@
   font-size: 1.4rem;
 }
 
+.container {
+  margin-top: 1rem;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.6rem;
+}
+
+.content p {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.content p span {
+  font-weight: bold;
+  color: var(--text-light);
+}
+
 @media (min-width: 768px) {
   .button {
     padding: 0.8rem;
     width: 20vw;
+  }
+  .content p {
+    margin-right: 1rem;
   }
 }

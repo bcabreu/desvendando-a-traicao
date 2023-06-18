@@ -1,14 +1,9 @@
 import styles from "@/styles/Button.module.css";
 
-// import { Roboto } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 
-// const roboto = Roboto({
-//   weight: "400",
-//   subsets: ["latin"],
-// });
-
-export default function Button() {
+export default function Button({ showContainer = true }) {
   return (
     <>
       <Link href="https://pay.kiwify.com.br/moHMIDE">
@@ -16,6 +11,45 @@ export default function Button() {
           <h4 className={`${styles.paragraph}`}>Revele a verdade hoje!</h4>
         </button>
       </Link>
+      {showContainer && (
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <Image
+              src="/images/comprasegura.png"
+              height={25}
+              width={25}
+              alt="Compra Segura"
+            />
+            <p>
+              Compra <span>Segura</span>
+            </p>
+          </div>
+
+          <div className={styles.content}>
+            <Image
+              src="/images/satisfacao-garantida.png"
+              height={25}
+              width={25}
+              alt="Satisfação Garantida"
+            />
+            <p>
+              <span>Satisfação</span> Garantida
+            </p>
+          </div>
+
+          <div className={styles.content}>
+            <Image
+              src="/images/privacidade.png"
+              height={25}
+              width={25}
+              alt="Privacidade Protegida"
+            />
+            <p>
+              <span>Privacidade</span> Protegida
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }
