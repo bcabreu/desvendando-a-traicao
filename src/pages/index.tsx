@@ -184,9 +184,9 @@ export default function Home() {
             restaurar a confiança e a paz em seu relacionamento.
           </p>
         </div>
-        <div className={styles.lead_capture}>
+        {/* <div className={styles.lead_capture}>
           <Formulario />
-        </div>
+        </div> */}
         <div className={styles.guarantee}>
           <Image
             src="/images/garantia.png"
