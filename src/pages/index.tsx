@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.product_details}>
-          <p>
+          <p className={styles.p_product_details}>
             O <span>Desvendando a Traição</span> é mais do que apenas um e-book,
             é um guia de vida real para a{" "}
             <span>restauração da confiança e da paz no seu relacionamento</span>
