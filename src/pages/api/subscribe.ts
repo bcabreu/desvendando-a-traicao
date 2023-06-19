@@ -27,8 +27,9 @@ export default async function subscribe(
 
       res.status(200).json({ message: "Inscrição bem sucedida!" });
     } catch (error) {
+      console.log(error);
       res.status(500).json({
-        message: "Erro ao se inscrever. Por favor, tente novamente mais tarde.",
+        message: `Erro ao se inscrever. Por favor, tente novamente mais tarde.`,
       });
     }
   } else {
