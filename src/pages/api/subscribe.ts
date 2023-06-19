@@ -13,7 +13,7 @@ export default async function subscribe(
         headers: {
           "Content-Type": "application/json",
           // Aqui estamos acessando a variável de ambiente
-          "api-key": `${process.env.SENDER_API_TOKEN}`,
+          "api-key": `${process.env.NEXT_PUBLIC_SENDER_API_TOKEN}`,
         },
         body: JSON.stringify({
           email: email,
@@ -27,7 +27,6 @@ export default async function subscribe(
 
       res.status(200).json({ message: "Inscrição bem sucedida!" });
     } catch (error) {
-      console.log(error);
       res.status(500).json({
         message: `Erro ao se inscrever. Por favor, tente novamente mais tarde.`,
       });
