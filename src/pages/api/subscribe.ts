@@ -8,18 +8,17 @@ export default async function subscribe(
     const { email } = req.body;
 
     try {
-      const response = await fetch("https://api.sender.net/v2/subscribers", {
+      const response = await fetch("https://api.sendinblue.com/v3/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           // Aqui estamos acessando a variável de ambiente
-          Authorization: `Bearer ${process.env.SENDER_API_TOKEN}`,
+          "api-key": `${process.env.SENDER_API_TOKEN}`,
         },
         body: JSON.stringify({
-          list_id: "sua_lista_id",
-          email,
-          // fields: { nome },
-          options: { confirmation: "force" },
+          email: email,
+          listIds: [2], // Adicione aqui o ID da lista à qual o contato deve ser adicionado.
+          updateEnabled: true, // Permite atualizar o contato se já existir.
         }),
       });
 
