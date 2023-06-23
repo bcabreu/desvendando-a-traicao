@@ -11,7 +11,7 @@ export default function Price() {
         </div>
         <div className={styles.newPrice}>
           <p>
-            <span>R$</span> 27,00
+            <span>R$</span> 47,00
           </p>
         </div>
         <Button />

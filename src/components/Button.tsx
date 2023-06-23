@@ -8,7 +8,9 @@ export default function Button({ showContainer = true }) {
     <>
       <Link href="https://pay.kiwify.com.br/moHMIDE">
         <button type="submit" className={styles.button}>
-          <h4 className={`${styles.paragraph}`}>Revele a verdade hoje!</h4>
+          <h4 className={`${styles.paragraph}`}>
+            Recupere a paz no seu relacionamento agora!
+          </h4>
         </button>
       </Link>
       {showContainer && (
